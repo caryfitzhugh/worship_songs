@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="./lib/style.css">
+  <script src='./lib/vextab-div.js'></script>
+  <script src='./lib/music.js'></script>
+  <script>
+    // Offset from A
+    let key_offset = 0;
+  </script>
+  </style>
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body id="home">
+  <script>
+key_sig()
+header({title: "Do It Again", by: "Elevation Worship", tempo: 94})
+
+order("Verse 1", "Chorus", "Verse 2", "Chorus(x2)", "Bridge (x4)", "Chorus (x2)", "{{4}} - {{1}} x4");
+
+section("Verse 1",`
+{{4}}Walking around these walls {{1/3}}I thought by now they’d fall
+{{4}}But you have never failed me {{1}}yet
+{{4}}Waiting for change to come {{1/3}}knowing the battle’s won
+{{4}}For you have never failed me {{1}}yet`);
+
+section("Chorus", `
+{{6}} Your promise still {{5/7}} stands
+Great is Your faith{{1}}fulness, Your {{4}}faithfulness
+{{6}} I'm still in Your {{5/7}}hands This is my {{1}}confidence
+You've {{4}}never failed [[on repeat, skip "me yet"]]me  {{1/3}}yet.  {{4}} -  {{1/3}}
+  `,
+'chorus');
+
+section("Verse 2", `
+{{4}}I know the night won’t last {{1/3}}Your word will come to pass
+{{4}}My heart will sing your praise a{{1}}-gain
+{{4}}Jesus you’re still enough {{1/3}} Keep me within your love
+{{4}}My heart will sing your praise a{{1}}gain`);
+
+section("Bridge",`
+notes :8 ## {{3}}/4 {{3}}/4 {{4}}/4 =|: :2d {{4}}/4 :8 ## {{3}}/4 {{3}}/4 {{4}}/4 | :2d {{4}}/4 :8 ## {{7}}/4 {{7}}/4 {{8}}/4 | :2d {{1}}/4 :8 ## {{7}}/4 {{7}}/4 {{1}}/4 | :2d {{1}}/4 :8 ## ({{3}}/5.{{3}}/4) ({{3}}/5.{{3}}/4) ({{4}}/5.{{4}}/4) |=:|
+{{4}}I've seen you move {{4}}You move the mountai{{1}}ns
+{{1}} And I believe {{1}}I'll see you do it aga{{4}}in
+{{4}}You made a way {{4}} Where there was no way
+{{1}} And I believe {{1}} I'll see you do it again
+  `);
+  </script>
+</body>
