@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="./lib/style.css">
+  <script src='./lib/vextab-div.js'></script>
+  <script src='./lib/music.js'></script>
+  <script>
+    let song_key = "F";
+  </script>
+  </style>
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body id="home">
+  <script>
+  key_sig()
+  header({title: "King of My Heart", by: "John Mark McMillan", tempo: 74})
+
+  order("Verse 1", "Chorus", "Verse 2", "Chorus", "Bridge (x4)", "Chorus (x2)");
+
+section("Verse 1",`
+  Let the {{1}}King of my Heart be
+  the {{4}}Mountain where I {{1}}run
+  the {{6}}Fountain I drink f{{5}}rom
+  Oh He {{4}}is my so{{1}}ng
+
+  Let the {{1}}King of my Heart be
+  the {{4}}shadow where I {{1}}hide
+  the {{6}}ransom for my l{{5}}ife
+  Oh He {{4}}is my s{{1}}ong`);
+
+section("Chorus", `
+  You are {{6}}good, {{5}}good, {{4}}Oh {{1}}
+  You are {{6}}good, {{5}}good, {{4}}Oh {{1}}
+  `, 'chorus');
+
+section("Verse 2", `
+  Let the {{1}}King of my Heart be the {{4}}wind inside my {{1}}sails
+  the {{6}}anchor in the wa{{5}}ves Oh He {{4}}is my so{{1}}ng
+
+  Let the {{1}}King of my Heart be the {{4}}fire inside my {{1}}veins
+  and the {{6}}echo of my {{5}}days Oh He {{4}}is my s{{1}}ong`);
+
+section("Bridge",`
+{{6}} You're {{5}}never gonna let, {{4}}never gonna let me {{1}}do-{{1/7}}wn
+`);
+  </script>
+</body>
+</html>
