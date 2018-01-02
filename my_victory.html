@@ -6,7 +6,9 @@
   <script src='./lib/vextab-div.js'></script>
   <script src='./lib/music.js'></script>
   <script>
-    let song_key = "A";
+    let song_keys = [
+      ['A', 'Normal']
+    ];
   </script>
   </style>
 	<!--[if IE]>
@@ -16,19 +18,22 @@
 
 <body id="home">
   <script>
-  key_sig()
+  key_selector();
+
+  key_sig();
+
   header({title: "My Victory", by: "David Crowder", tempo: 82})
 
   order("Intro 2x", "Verse 1", "Chorus", "Intro", "Verse 2", "Chorus", "Bridge", '+1 E Measure', "Chorus", "End on E");
 
 section("Intro",`
-  notes =|: :16 {{5}}/4 $.top.$ $ {{4}}$ :8d {{6}}/4 :2d t{{6}}/4 | :16 {{7}}/4 $ {{6}}m $ :8d {{1}}/4 :2 t{{1}}/4 :q {{3}}/5 | :16 {{5}}/4 $ {{4}}$ :8d {{6}}/4 :2d t{{6}}/4 | :16 {{3}}/5 $ {{6}}m$ :8d {{1}}/4 :2 t{{1}}/4 :q {{5}}/5   =:|
+  notes =|: :16 {{5}}/4 [[4]] :8d {{6}}/4 :2d t{{6}}/4 | :16 {{7}}/4 [[6]] :8d {{1}}/4 :2 t{{1}}/4 :q {{3}}/5 | :16 {{5}}/4 [[4]] :8d {{6}}/4 :2d t{{6}}/4 | :16 {{3}}/5 [[6]] :8d {{1}}/4 :2 t{{1}}/4 :q {{5}}/5   =:|
 `);
 
 section("Verse 1",`
   {{4}}  You came for criminals {{6}} And every pharisee
   {{4}}  You came for hypocrites {{6}} Even one like me
-  notes | :16 {{5}}/4 $.top.$ $ {{4}}$ :8d {{6}}/4 :2d t{{6}}/4 | :16 {{7}}/4 $ {{6}}m $ :8d {{1}}/4 :2 t{{1}}/4 :q {{3}}/5 | :16 {{5}}/4 $ {{4}}$ :8d {{6}}/4 :2d t{{6}}/4 | :16 {{3}}/5 $ {{6}}m$ :8d {{1}}/4 :2 t{{1}}/4 :q {{5}}/5   |
+  notes | :16 {{5}}/4 [[4]] :8d {{6}}/4 :2d t{{6}}/4 | :16 {{7}}/4 [[6]] :8d {{1}}/4 :2 t{{1}}/4 :q {{3}}/5 | :16 {{5}}/4 [[4]] :8d {{6}}/4 :2d t{{6}}/4 | :16 {{3}}/5 [[6]] :8d {{1}}/4 :2 t{{1}}/4 :q {{5}}/5   |
   {{4}}  You carried sin and shame {{6}} The guilt of every man
   {{4}}  The weight of all I've done {{6}} Nailed into Your ha{{5}}nds
 `);

@@ -1,9 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Anonymous+Pro:400,400i,700,700i|Roboto+Slab:100,400,700');
 body {
-  padding: 0 0 0 30px;
+  padding: 30px 0 0 30px;
   margin: 0;
   max-width: 1024px;
   position: relative;
+}
+.key-selector {
+    position: fixed;
+    top: 0;
+    background: white;
+    padding: 3px;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    padding-left: 30px;
 }
 .song {
   position: relative;
@@ -48,7 +58,7 @@ body {
 
 .key {
   position: absolute;
-  top: 0;
+  top: 30px;
   right: 0;
 }
 .tempo:before {

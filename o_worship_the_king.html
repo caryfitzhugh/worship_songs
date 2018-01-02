@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="./lib/style.css">
+  <script src='./lib/vextab-div.js'></script>
+  <script src='./lib/music.js'></script>
+  <script>
+    let song_keys = [
+        ["G", 'Normal'],
+     ];
+  </script>
+  </style>
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body id="home">
+  <script>
+  key_selector();
+  key_sig();
+
+  header({title: "O Worship the King", by: "Chris Tomlia", tempo: 60})
+
+  order("Verse 1", "Verse 2", "Chorus", "Verse 3", "Chorus x 2");
+
+section("Verse 1",`
+  O {{1}}Worship the King, all g{{4}}lorious ab{{5}}ove
+  And {{1}}gratefully sing His won{{5}}derful l{{1}}ove
+  Our {{5}}shield and defender the ancient of days
+  Pav{{1}}illioned in splendor, and {{5}}girded with {{1}}praise
+  `);
+
+section("Verse 2",`
+O {{1}}tell of his might, O {4}}sing of His gr{{5}}ace
+Whose {{1}}robe is the light and c{{5}}anopy s{{1}}pace
+His {{5}}chariots of wrath the deep thunderclouds form
+And {{1}}dark is His path on the {{5}}wings of the {{1}}storm.
+  `);
+
+section("Chorus", `
+  For {{4}}You alone are the {{6}}matchless King
+  To {{2}}You alone be all  -{{1/3}}- majesty
+  Your {{4}}glories and wonders what {{6}}tongue can recite?
+  You {{2}}breathe in the air, {{1/3}} You shine in the light{{4}}.
+  `, 'chorus');
+
+section("Verse 3", `
+  O {{1}}measureless might, in{{4}}effable {{5}}love,
+  While {{1}}angels delight to w{{5}}orship a{{1}}bove
+  Thy {{5}}mercies how tender, how firm to the end
+  Our {{1}}Maker, Defender, {{5}}Redeemer, and {{1}}Friend
+  `);
+
+  </script>
+</body>
+</html>

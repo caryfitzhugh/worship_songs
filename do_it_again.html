@@ -6,7 +6,9 @@
   <script src='./lib/vextab-div.js'></script>
   <script src='./lib/music.js'></script>
   <script>
-    let song_key = 'A';
+    let song_keys = [
+      ['A', 'Normal']
+    ];
   </script>
   </style>
 	<!--[if IE]>
@@ -16,6 +18,7 @@
 
 <body id="home">
   <script>
+key_selector();
 key_sig()
 header({title: "Do It Again", by: "Elevation Worship", tempo: 94})
 

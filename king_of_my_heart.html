@@ -6,7 +6,10 @@
   <script src='./lib/vextab-div.js'></script>
   <script src='./lib/music.js'></script>
   <script>
-    let song_key = "F";
+    let song_keys = [
+        ["F", 'Male Lead'],
+        ["G", 'Female Lead']
+     ];
   </script>
   </style>
 	<!--[if IE]>
@@ -16,7 +19,9 @@
 
 <body id="home">
   <script>
-  key_sig()
+  key_selector();
+  key_sig();
+
   header({title: "King of My Heart", by: "John Mark McMillan", tempo: 74})
 
   order("Verse 1", "Chorus", "Verse 2", "Chorus", "Bridge (x4)", "Chorus (x2)");
