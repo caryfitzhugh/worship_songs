@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    let song_keys = [
+        ["G", 'Normal'],
+     ];
+  </script>
+  <script src='./lib/music.js'></script>
+</head>
+
+<body id="home">
+  <script>
+  key_selector();
+  key_sig();
+
+  header({title: "History Maker", by: "Delirious", tempo: 60})
+
+  order("Verse 1", "Pre-Chorus", "Verse 2", "Chorus", "Verse 3", "Chorus x 2");
+  section("Verse 1",`
+    Is it {{6}}true today that when {{4}}people pray
+    Cloudless {{6}}skies will break
+    Kings and que{{4}}ens will shake
+    Yes it's {{5}}true and I believe {{4}}it
+    I'm living for {{1}}you  {{5}} - {{6}} - {{4}}
+  `);
+
+  section('Verse 2', `
+    Is it {{6}}true today that when {{4}}people pray
+    We'll see {{6}}dead men rise
+    And the b{{4}}lind set free
+    Yes it's {{5}}true and I bel{{4}}ieve it
+    I'm living for {{1}}you {{5}} - {{6}} - {{4}}
+  `);
+
+  section("Chorus", `
+    {{1}}I'm gonna be a history {{6}}maker in this {{4}}land
+    {{1}}I'm gonna be a speaker of {{6}}truth to all {{4}}mankind
+    {{6}}I'm gonna stand, {{5/7}} - I'{{1}}m gonna run{{4}}
+    Into your {{1}}arms {{5/7}}, into your {{6}}arms {{4}}again
+    Into your {{1}}arms {{5/7}}, into your {{6}}arms {{4}}again
+  `);
+
+  section('Verse 3', `
+    Well it's {{6}}true today that when {{4}}people stand
+    With the {{6}}fire of God, and the {{4}}truth in hand
+    We'll see {{6}}miracles, we'll see {{4}}angels sing
+    We'll see {{6}}broken hearts making {{4}}history
+    Yes it's {{5}}true and I bel{{4}}ieve it
+    I'm living for {{1}}you {{5}} - {{6}} - {{4}}
+  `);
+
+  </script>
+</body>
+</html>
