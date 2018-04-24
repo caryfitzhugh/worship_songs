@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    let song_keys = [
+      ['G', 'Normal']
+    ];
+  </script>
+  <script src='./lib/music.js'></script>
+</head>
+
+<body id="home">
+  <script>
+key_selector();
+key_sig()
+header({title: "The Cause Of Christ", by: "Kari Jobe, et. al.", tempo: 94})
+
+order(
+      "Verse 1",
+      "Chorus",
+      "Verse 2",
+      "Chorus",
+      "Bridge (x4)",
+      "Chorus",
+      "Verse 3",
+  );
+
+section("Verse 1",`
+  The {{1}}only thing I want in {{5}}life
+  Is to {{2}}be known for loving {{6}}Christ
+  To {{1}}build His church, to love His {{5}}bride
+  And {{2}}make his name known f{{1/3}}ar and {{4}}wide
+`);
+section("Chorus",`
+  For this {{4}}cause I {{1}}live, for this {{3}}cause I'd d{{5}}ie
+  I su{{4}}rrender {{1}}all, for the {{3}}cause of C{{5}}hrist
+  All I {{4}}once held {{1}}dear, I will {{3}}leave b{{5}}ehind
+  For my {{4}}joy is {{1}}this, oh the {{3}}cause {{5}}of {{1}}Christ
+`);
+
+section("Verse 2", `
+  He {{1}}is all my soul will {{5}}prize
+  Reg{{2}}ardless of the joy or {{6}}trial
+  When {{1}}agonizing questions {{5}}rise
+  In {{2}}Jesus all my h{{1/3}}ope {{4}}abides
+`);
+
+section("Bridge",`
+  {{2}}Jesus, my {{6}}Jesus for Your {{1}}glory, for Your {{5}}name.
+  {{2}}Jesus, my {{6}}Jesus I will {{1}}only sing Your {{5}}praise.
+`);
+
+section("Verse 3", `
+  It {{1}}is not fame that I {{5}}desire
+  Nor {{2}}stature in my brother’s {{6}}eye.
+  I {{1}}pray it’s said about my {{5}}life
+  That I {{2}}lived more to build Your {{1/3}}name than {{4}}mine.
+`);
+</script>
+</body>
